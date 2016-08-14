@@ -1,0 +1,17 @@
+{
+  "name": "Cartoons! By John",
+  "author": "Josh Lapham <josh@joshlapham.com>",
+  "description": "A website for animator John Paine (https://twitter.com/johnrodpaine) that showcases his animations, comics and random drawings.",
+  "license": "Beerware",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "public/vendor"
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "react": "15.2.0",
+    "jquery": "2.2.2",
+    "babel": "5.8.38"
+  }
+}
