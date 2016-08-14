@@ -1,14 +1,13 @@
 var Video = React.createClass({
  render: function() {
    return (
-     <section className="video">
+     <section className="video" class="video">
        <h3 className="videoTitle">
          <a href={'https://www.youtube.com/watch?v=' + this.props.youtube_id}>{this.props.title}</a>
        </h3>
 
        {this.props.description}
-       <br />{this.props.duration}
-       <br />{this.props.date}
+       <br /><span id="video-details">{this.props.duration + '  //  ' + new Date(this.props.date).toLocaleDateString()}</span>
      </section>
    );
  }
