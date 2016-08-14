@@ -3,7 +3,7 @@ var Video = React.createClass({
    return (
      <section className="video">
        <h3 className="videoTitle">
-         {this.props.title}
+         <a href={'https://www.youtube.com/watch?v=' + this.props.youtube_id}>{this.props.title}</a>
        </h3>
 
        {this.props.description}
@@ -48,7 +48,7 @@ var VideoList = React.createClass({
   render: function() {
     var videoNodes = this.props.data.map(function(video) {
       return (
-        <Video title={video.title} key={video.youtube_id} description={video.description} duration={video.duration} date={video.date}>
+        <Video title={video.title} youtube_id={video.youtube_id} description={video.description} duration={video.duration} date={video.date}>
         </Video>
       );
     });
