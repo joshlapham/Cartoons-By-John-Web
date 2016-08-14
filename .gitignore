@@ -1,3 +1,6 @@
+# Bower install path
+public/vendor
+
 # Created by https://www.gitignore.io/api/osx,bower,node
 
 ### OSX ###
