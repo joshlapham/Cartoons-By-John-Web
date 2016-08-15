@@ -28,3 +28,12 @@
 .video-details {
   color: darkgray;
 }
+
+#doodle-content {
+  /* Space between navbar and content */
+  margin-top: 4.5em;
+}
+
+.doodle {
+  display: inline-block;
+}
