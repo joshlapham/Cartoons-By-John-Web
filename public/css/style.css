@@ -1,3 +1,8 @@
+#video-content {
+  /* Space between navbar and content */
+  margin-top: 4.5em;
+}
+
 .video-list {
   margin-top: 0.5em;
 }

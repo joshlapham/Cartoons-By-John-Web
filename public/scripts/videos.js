@@ -69,5 +69,5 @@ var VideoList = React.createClass({
 
 ReactDOM.render(
   <VideoBox url="http://localhost:3002/videos" pollInterval={2000} />,
-  document.getElementById('content')
+  document.getElementById('video-content')
 );
