@@ -8,7 +8,7 @@ var Video = React.createClass({
          </section>
 
          <section className="col-md-10">
-           <h3 className="videoTitle">
+           <h3 className="video-title">
              <a href={'https://www.youtube.com/watch?v=' + this.props.youtube_id}>{this.props.title}</a>
            </h3>
 
@@ -44,7 +44,7 @@ var VideoBox = React.createClass({
   },
   render: function() {
     return (
-      <section className="videoBox row">
+      <section className="video-box row">
         <VideoList data={this.state.data} />
       </section>
     );
@@ -60,7 +60,7 @@ var VideoList = React.createClass({
       );
     });
     return (
-      <section className="videoList">
+      <section className="video-list">
         {videoNodes}
       </section>
     );

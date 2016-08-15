@@ -1,9 +1,22 @@
+.video-list {
+  margin-top: 0.5em;
+}
+
 .video {
   font-size: 1.4em;
+
+  /* Space between videos in list */
+  margin-bottom: 1.6em;
+}
+
+.video-title {
+  padding: 0;
+  margin: 0;
 }
 
 .video-description {
   display: inline-block;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
