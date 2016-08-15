@@ -2,6 +2,11 @@
   font-size: 1.4em;
 }
 
-#video-details {
+.video-description {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.video-details {
   color: darkgray;
 }

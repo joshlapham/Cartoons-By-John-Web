@@ -1,13 +1,21 @@
 var Video = React.createClass({
  render: function() {
    return (
-     <section className="video" class="video">
-       <h3 className="videoTitle">
-         <a href={'https://www.youtube.com/watch?v=' + this.props.youtube_id}>{this.props.title}</a>
-       </h3>
+     <section className="video col-md-12">
+       <section className="row">
+         <section className="col-md-2">
+           <img src={'https://img.youtube.com/vi/' + this.props.youtube_id + '/default.jpg'} />
+         </section>
 
-       {this.props.description}
-       <br /><span id="video-details">{this.props.duration + '  //  ' + new Date(this.props.date).toLocaleDateString()}</span>
+         <section className="col-md-10">
+           <h3 className="videoTitle">
+             <a href={'https://www.youtube.com/watch?v=' + this.props.youtube_id}>{this.props.title}</a>
+           </h3>
+
+           <span className="video-description">{this.props.description}</span>
+           <br /><span className="video-details">{this.props.duration + '  //  ' + new Date(this.props.date).toLocaleDateString()}</span>
+         </section>
+       </section>
      </section>
    );
  }
@@ -36,7 +44,7 @@ var VideoBox = React.createClass({
   },
   render: function() {
     return (
-      <section className="videoBox">
+      <section className="videoBox row">
         <VideoList data={this.state.data} />
       </section>
     );
